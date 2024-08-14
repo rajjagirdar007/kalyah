@@ -1,0 +1,91 @@
+.sidebar {
+  background-color: #060606;
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.sidebar .logo {
+  font-family: 'PP Neue Machina Plain';
+  font-size: 30px;
+  color: #05ff44;
+  font-weight: 500;
+}
+
+.sidebar ul {
+  padding: 0;
+  margin: 30px 0 0 0;
+  width: 100%;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+  list-style-type: none;
+}
+
+.sidebar ul li h3 {
+  font-family: 'PP Neue Machina Plain';
+  font-size: 14px;
+  color: #fff;
+  font-weight: normal;
+}
+
+.sidebar ul li h3 span {
+  cursor: pointer;
+}
+
+.sidebar ul li a {
+  font-family: 'PP Neue Machina Plain';
+  font-size: 14px;
+  color: #fff;
+  font-weight: 400;
+  padding: 7px 10px;
+  display: block;
+}
+
+.sidebar ul li a:hover, .sidebar ul li a.active {
+  font-family: 'PP Neue Machina Plain';
+  font-size: 14px;
+  color: #05ff44;
+  font-weight: 400;
+  text-decoration: none;
+  background-color: #000;
+  border-radius: 6px;
+}
+
+.sidebar ul li a span {
+  float: right;
+}
+
+@media (max-width: 992px) {
+  .sidebar {
+    width: 100%;
+    position: fixed;
+    top: 70px;
+    border-radius: 0;
+    height: auto;
+    z-index: 99;
+    background-color: #000000;
+    border-bottom: solid 1px #05ff44;
+  }
+  .sidebar .logo {
+    display: none;
+  }
+  .sidebar ul {
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=sidebar.css.map */

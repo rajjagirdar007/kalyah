@@ -1,0 +1,15 @@
+.nav-bar {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: #42f560;
+}
+
+li {
+	display: inline;
+}
+
+li form {
+	display: inline;
+}
+

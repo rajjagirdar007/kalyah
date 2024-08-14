@@ -1,0 +1,192 @@
+
+@import "_variable";
+@import "_mixin";
+
+.middlePartMain {
+    width: 100%;
+    padding-left: 250px;
+    .middle {
+        padding: 50px;
+        .title {
+            h1 {
+                @include font(36px, $black, 700);
+            }
+            p {
+                @include font(22px, $black, 400);
+            }
+        }
+        
+    }
+    
+}
+
+.customTable {
+    padding: 0px 1px;
+    .table td, .table th {
+        vertical-align: middle;
+        border-top: solid 1px #101010;
+    }
+    .table {
+        // border-collapse: separate;
+        // border-spacing: 0 10px;
+        thead {
+            th {
+                padding: 10px;
+                background-color: $primary;
+                @include font(14px, $black, 700);
+                border: 0;
+            }
+
+            th:first-child {
+                border-radius: 4px 0 0 0;
+            }
+
+            th:last-child {
+                border-radius: 0 4px 0 0;
+            }
+        }
+
+        tbody {
+            .trCustom {
+                box-shadow: 0 0 3px 0 rgba(0, 0, 0, .1);
+                border-radius: 4px;
+
+                td {
+                    background-color: $dark;
+                    @include font(12px, $white, 300);
+                }
+                // &:hover {
+                //     border-radius: 4px;
+
+                //     td {
+                //         background: rgba($light, .5);
+                //     }
+
+                //     td:first-child {
+                //         border-radius: 4px 0 0 4px;
+                //     }
+
+                //     td:last-child {
+                //         border-radius: 0 4px 4px 0;
+                //     }
+                // }
+                .websiteHead {
+                    display: block;
+                    h5 {
+                        @include font(13px, $white, 500);
+                        margin-bottom: 0;
+                    }
+                    a {
+                        @include font(12px, $gray, 500);
+                    }
+                }
+                .copyIcon {
+                    cursor: pointer;
+                }
+                .passwordText {
+                    font-size: 16px;
+                    margin-top: 10px;
+                }
+                .menuIcon {
+                    cursor: pointer;
+                }
+
+            }
+        }
+    }
+}
+
+.tableThumb {
+    width: 40px;
+    img {
+        width: 40px;
+        height: 40px;
+        border-radius: 6px;
+    }
+}
+
+.tableIcon {
+    width: 30px;
+    height: 30px;
+    background-color: $white;
+    border: solid 1px $primary;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+@media (min-width: 1200px) {
+    .middlePartMain .middle {
+      padding: calc(1.25rem + ((1vw - 12px) * 4.1667));
+      min-height: 0vw;
+    }
+    .middlePartMain .middle .title h1 {
+        font-size: calc(1.25rem + ((1vw - 12px) * 2.2222));
+        min-height: 0vw;
+    }
+    .middlePartMain .middle .title p {
+        font-size: calc(1rem + ((1vw - 12px) * 0.8333));
+        min-height: 0vw;
+    }
+    .middlePartMain .middle .projectBox {
+        padding: calc(0.625rem + ((1vw - 12px) * 1.3889));
+        border-radius: calc(0.625rem + ((1vw - 12px) * 1.3889));
+        min-height: 0vw;
+    }
+    .middlePartMain .middle .projectBox h3 {
+        font-size: calc(0.875rem + ((1vw - 12px) * 0.8333));
+    }
+    
+}
+@media (max-width: 1199px) {
+    .middlePartMain .middle {
+        padding: 20px;
+    }
+    .middlePartMain .middle .title h1 {
+        font-size: 20px;
+    }
+    .middlePartMain .middle .title p {
+        font-size: 16px;
+    }
+    .btnBlack {
+        padding: 0 20px;
+        font-size: 14px;
+        height: 40px;
+    }
+    .btnBlackBordered {
+        padding: 0 20px;
+        font-size: 14px;
+        height: 40px;
+    }
+    .middlePartMain .middle .projectBox {
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .middlePartMain .middle .projectBox h3 {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 992px) {
+    .middlePartMain {
+        padding: 0;
+    }
+}
+@media (max-width: 576px) {
+    .modalCustom .modal-content .modal-header .modal-title {
+        font-size: 18px;
+    }
+    .tabDetails {
+        padding: 20px;
+    }
+    .tabDetails ul.uploadPic li {
+        width: 100%;
+    }
+    .tabDetails ul.uploadPic .uploadImg {
+        height: 200px;
+    }
+}

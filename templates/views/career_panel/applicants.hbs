@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+        <head>
+                <title>Applicants</title>
+        </head>
+
+        <body>
+                <p>Applicants for {{position.0.position}}</p>
+                <a href="/panel/logout">Logout</a>
+		<a href="/panel/">Back</a>
+
+                <table>
+                        <thead>
+                                <tr>
+                                        <th>Name</th>
+                                        <th>Email</th>
+                                        <th>Phone</th>
+                                        <th>Date</th>
+					<th></th>
+                                </tr>
+                        </thead>
+                        <tbody>
+                                {{#each position}}
+                                <tr>
+                                        <td>{{this.fname}} {{this.lname}}</td>
+                                        <td>{{this.email}}</td>
+                                        <td>
+                                        	{{this.phone}}
+					</td>
+                                        <td>
+                                        	{{this.date_time}}
+					</td>
+					<td>
+						<a href="/resumes/{{{this.phone}}}_.pdf">View</a>
+					</td>
+                                </tr>
+                                {{/each}}
+                        </tbody>
+                </table>
+        </body>
+</html>
+

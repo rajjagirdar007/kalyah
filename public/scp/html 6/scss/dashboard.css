@@ -1,0 +1,196 @@
+.middlePartMain {
+  width: 100%;
+  padding-left: 250px;
+}
+
+.middlePartMain .middle {
+  padding: 50px;
+}
+
+.middlePartMain .middle .title h1 {
+  font-family: 'PP Neue Machina Plain';
+  font-size: 36px;
+  color: #000000;
+  font-weight: 700;
+}
+
+.middlePartMain .middle .title p {
+  font-family: 'PP Neue Machina Plain';
+  font-size: 22px;
+  color: #000000;
+  font-weight: 400;
+}
+
+.customTable {
+  padding: 0px 1px;
+}
+
+.customTable .table td, .customTable .table th {
+  vertical-align: middle;
+  border-top: solid 1px #101010;
+}
+
+.customTable .table thead th {
+  padding: 10px;
+  background-color: #05ff44;
+  font-family: 'PP Neue Machina Plain';
+  font-size: 14px;
+  color: #000000;
+  font-weight: 700;
+  border: 0;
+}
+
+.customTable .table thead th:first-child {
+  border-radius: 4px 0 0 0;
+}
+
+.customTable .table thead th:last-child {
+  border-radius: 0 4px 0 0;
+}
+
+.customTable .table tbody .trCustom {
+  -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.customTable .table tbody .trCustom td {
+  background-color: #060606;
+  font-family: 'PP Neue Machina Plain';
+  font-size: 12px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.customTable .table tbody .trCustom .websiteHead {
+  display: block;
+}
+
+.customTable .table tbody .trCustom .websiteHead h5 {
+  font-family: 'PP Neue Machina Plain';
+  font-size: 13px;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.customTable .table tbody .trCustom .websiteHead a {
+  font-family: 'PP Neue Machina Plain';
+  font-size: 12px;
+  color: #AAAAAA;
+  font-weight: 500;
+}
+
+.customTable .table tbody .trCustom .copyIcon {
+  cursor: pointer;
+}
+
+.customTable .table tbody .trCustom .passwordText {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.customTable .table tbody .trCustom .menuIcon {
+  cursor: pointer;
+}
+
+.tableThumb {
+  width: 40px;
+}
+
+.tableThumb img {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+}
+
+.tableIcon {
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border: solid 1px #05ff44;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 1200px) {
+  .middlePartMain .middle {
+    padding: calc(1.25rem + ((1vw - 12px) * 4.1667));
+    min-height: 0vw;
+  }
+  .middlePartMain .middle .title h1 {
+    font-size: calc(1.25rem + ((1vw - 12px) * 2.2222));
+    min-height: 0vw;
+  }
+  .middlePartMain .middle .title p {
+    font-size: calc(1rem + ((1vw - 12px) * 0.8333));
+    min-height: 0vw;
+  }
+  .middlePartMain .middle .projectBox {
+    padding: calc(0.625rem + ((1vw - 12px) * 1.3889));
+    border-radius: calc(0.625rem + ((1vw - 12px) * 1.3889));
+    min-height: 0vw;
+  }
+  .middlePartMain .middle .projectBox h3 {
+    font-size: calc(0.875rem + ((1vw - 12px) * 0.8333));
+  }
+}
+
+@media (max-width: 1199px) {
+  .middlePartMain .middle {
+    padding: 20px;
+  }
+  .middlePartMain .middle .title h1 {
+    font-size: 20px;
+  }
+  .middlePartMain .middle .title p {
+    font-size: 16px;
+  }
+  .btnBlack {
+    padding: 0 20px;
+    font-size: 14px;
+    height: 40px;
+  }
+  .btnBlackBordered {
+    padding: 0 20px;
+    font-size: 14px;
+    height: 40px;
+  }
+  .middlePartMain .middle .projectBox {
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .middlePartMain .middle .projectBox h3 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 992px) {
+  .middlePartMain {
+    padding: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .modalCustom .modal-content .modal-header .modal-title {
+    font-size: 18px;
+  }
+  .tabDetails {
+    padding: 20px;
+  }
+  .tabDetails ul.uploadPic li {
+    width: 100%;
+  }
+  .tabDetails ul.uploadPic .uploadImg {
+    height: 200px;
+  }
+}
+/*# sourceMappingURL=dashboard.css.map */

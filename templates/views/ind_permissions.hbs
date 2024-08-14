@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>kalyah</title>
+	</head>
+
+	<body>
+		<h1>individual permissions settings</h1>
+
+		<a href = "/app/manage_passwords/permissions_module">permissions_module</a>
+
+		<table>
+			<tr>
+				<th></th>
+				<th>asset name, link</th>
+				<th>access to</th>
+			</tr>
+
+			{{#each row}}
+			<tr>
+				<td>{{this.permissions_id}}</td>
+				<td>{{this.original_link}}</td>
+				<td>{{this.access_to}}</td>
+				<td>
+					<form action = "/app/add_member" method = "post">
+						<input type = "hidden" name = "id" value = {{this.permissions_id}}>
+						<input type = "hidden" name = "link" value = {{this.original_link}}>
+						<select name = "member" onchange = "this.form.submit();">
+							<option></option>
+							{{#each ../member}}
+							<option value = {{this}}>{{this}}</option>
+							{{/each}}
+						</select>
+					</form>
+				</td>
+			</tr>
+			{{/each}}
+		</table>
+	</body>
+</html>

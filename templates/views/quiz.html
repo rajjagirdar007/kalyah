@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Task Form</title>
+		
+		<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+
+	</head>
+
+	<body>
+		<div id="app">
+            <form action="/form" method="post">
+            <div v-show="step === 1">
+          
+              <p>
+              <label for="connect">{{questions.question1}}</label>
+              <input id="connect" name="name" v-model="form.issue" type="radio" value="connect">
+              <label for="connect">Connectivity</label>
+              <input id="hardware" name="name" v-model="form.issue" type="radio" value="hardware">
+              <label for="hardware">Hardware</label>
+              <input id="network" name="name" v-model="form.issue" type="radio" value="network">
+              <label for="network">Network</label>
+
+
+              </p>
+          
+          
+              <button type="button" @click.prevent="next()">Next</button>
+              
+            </div>
+          
+            <div v-show="step === 2">
+                <p>
+                    <label for="descrip">{{questions.question2}}</label>
+                    <textarea v-model="form.descrip" id= "descrip" name="engineering"></textarea>
+                  </p>
+          
+          
+              <button type="button" @click.prevent="prev()">Previous</button>
+              <button type="button" @click.prevent="next()">Next</button>
+          
+            </div>
+          
+            <div v-show="step === 3">
+                <p>
+                    <label for="movie">{{questions.question3}}</label>
+                    <input id="home" name="name" v-model="form.location" type="radio" value="home">
+                    <label for="home">Home/ Personal</label>
+                    <input id="office" name="name" v-model="form.location" type="radio" value="office">
+                    <label for="office">Office</label>
+                    </p>
+                    <button type="button" @click.prevent="prev()">Previous</button>
+                    <button type="button" @click.prevent="next()">Next</button>
+                    </div>
+            <div v-show="step === 4">
+
+                <p>
+                    <label for="movie">{{questions.question4}}</label>
+                    <input id="home" name="name" v-model="form.severity" type="radio" value="home">
+                    <label for="home">Home/ Personal</label>
+                    <input id="office" name="name" v-model="form.severity" type="radio" value="office">
+                    <label for="office">Office</label>
+                    </p>
+            
+                <button type="button" @click.prevent="prev()">Previous</button>
+                <input type="submit" value="Save" >
+                <pre>{{$data}}</pre>     
+
+  
+                
+              </div>
+            </form>
+          
+</div>
+          
+	</body>
+	<script src="./js/quiz1.js"></script>
+</html>

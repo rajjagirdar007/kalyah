@@ -1,0 +1,61 @@
+
+@import "_variable";
+@import "_mixin";
+
+html, body {
+    font-family: 'PP Neue Machina Plain';
+    letter-spacing: 2px;
+    background-color: $black;
+}
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+a:hover {
+    text-decoration: none;
+}
+
+.formPart {
+    margin-bottom: 30px;
+}
+.inputField {
+    background-color: $black;
+    border-radius: 6px;
+    @include font(14px, $primary, normal);
+    // padding: 15px 25px;
+    border: solid 1px $primary;
+    height: inherit;
+    letter-spacing: 2px;
+    &:focus {
+        background-color: $black;
+        border-radius: 6px;
+        @include font(14px, $primary, normal);
+        border: solid 1px $primary;
+        box-shadow: none;
+    }
+}
+.inputField::placeholder {
+    @include font(14px, $primary, normal);
+}
+label {
+    @include font(14px, $black, 500);
+}
+.searchBtn {
+    background-color: $primary;
+    border-radius: 0 6px 6px 0;
+}
+.btnPrimary {
+    background-color: $primary;
+    border-radius: 4px;
+    @include font(14px, $black, bold);
+    // padding: 0 25px;
+    // height: 50px;
+    letter-spacing: 2px;
+    border: solid 1px $primary;
+    &:hover {
+        background-color: $black;
+        color: $primary;
+    }
+}

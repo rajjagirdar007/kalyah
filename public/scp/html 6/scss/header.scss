@@ -1,0 +1,102 @@
+
+@import "_variable";
+@import "_mixin";
+
+
+.navbarCustom {
+    background-color: transparent !important;
+    box-shadow: 4px 0px 8px #0000001A;
+    width: 100%;
+    height: 60px;
+    padding-top: 0;
+    padding-bottom: 0;
+    .userButton {
+        border: 0;
+    }
+    .navbarTogglerCustom {
+        background-color: $black;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        border-color: $primary;
+        span {
+            width: 20px;
+            height: 2px;
+            background-color: $primary;
+            margin: 4px 0;
+        }
+        &:hover {
+            background-color: $primary;
+            span {
+                background-color: $black;
+            }
+        }
+    }
+    .navbar-brand {
+        @include font(30px, $primary, 500);
+    }
+    .nav-item {
+        display: flex;
+        align-items: center;
+    }
+    .navbar-nav {
+        .nav-link {
+            @include font(14px, $primary, 500);
+            margin-right: 10px;
+            &:hover {
+                color: $primary;
+            }
+        }
+        .show > .nav-link {
+            color: $primary !important;
+        }
+        .dropdown-menu {
+            top: 50px;
+            background-color: $black;
+            border: solid 1px $primary;
+            border-radius: 10px;
+            .dropdown-item {
+                @include font(14px, $primary, 500);
+                &:hover {
+                    background-color: transparent;
+                    color: $white;
+                }
+            }
+        }
+    }
+    
+}
+.userPic {
+    width: 40px;
+    height: 40px;
+    img {
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+    }
+}
+.mobileMenu {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: $black;
+    z-index: 99;
+    border-bottom: solid 1px $primary;
+    .navbar-nav .nav-link {
+        color: $primary;
+        padding: 20px;
+    }
+}
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+    color: $black;
+}
+
+
+
+
+@media (max-width: 992px) {
+    .userButton {
+        padding: 0;
+    }
+}

@@ -1,0 +1,6 @@
+@mixin font($size, $color, $weight) {
+    font-family: 'PP Neue Machina Plain';
+    font-size: $size;
+    color: $color;
+    font-weight: $weight;
+}

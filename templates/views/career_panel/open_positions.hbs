@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Careers</title>
+	</head>
+
+	<body>
+		<p>Open positions</p>
+		<a href="/panel/logout">Logout</a>
+		<a href="/panel/add_career">Add career</a>
+		
+		<table>
+			<thead>
+				<tr>
+					<th>Title</th>
+					<th>Location</th>
+					<th></th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody>
+				{{#each position}}
+				<tr>
+					<td>{{this.title}}</td>
+					<td>{{this.location}}</td>
+					<td>
+						<a href="/panel/position/{{{this.id}}}">Edit</a>
+					</td>
+					<td>
+						<a href="/panel/applicants/{{{this.title}}}">View({{this.count_position}})</a>
+					</td>
+				</tr>
+				{{/each}}
+			</tbody>
+		</table>
+	</body>
+</html>

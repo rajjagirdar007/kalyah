@@ -1,0 +1,37 @@
+
+@font-face {
+    font-family: 'PP Neue Machina Plain';
+    src: url('PPNeueMachina-PlainLight.eot');
+    src: url('PPNeueMachina-PlainLight.eot?#iefix') format('embedded-opentype'),
+        url('PPNeueMachina-PlainLight.woff2') format('woff2'),
+        url('PPNeueMachina-PlainLight.woff') format('woff'),
+        url('PPNeueMachina-PlainLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PP Neue Machina Plain';
+    src: url('PPNeueMachina-PlainRegular.eot');
+    src: url('PPNeueMachina-PlainRegular.eot?#iefix') format('embedded-opentype'),
+        url('PPNeueMachina-PlainRegular.woff2') format('woff2'),
+        url('PPNeueMachina-PlainRegular.woff') format('woff'),
+        url('PPNeueMachina-PlainRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PP Neue Machina Plain';
+    src: url('PPNeueMachina-PlainUltrabold.eot');
+    src: url('PPNeueMachina-PlainUltrabold.eot?#iefix') format('embedded-opentype'),
+        url('PPNeueMachina-PlainUltrabold.woff2') format('woff2'),
+        url('PPNeueMachina-PlainUltrabold.woff') format('woff'),
+        url('PPNeueMachina-PlainUltrabold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

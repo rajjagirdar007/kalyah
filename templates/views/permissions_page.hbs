@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>kalyah</title>
+
+		<link rel = "stylesheet" href = "/css/nav_bar.css">
+	</head>
+
+	<body>
+		<h1>control access to passwords</h1>
+		<h4>admin: {{username}}</h4>
+
+		<ul class = "nav-bar">
+			<li>
+				<form action = "/logout" method = "get">
+					<button type = "submit">logout</button>
+				</form>
+			</li>
+			<li>
+				<a href = "/app/manage_passwords">view passwords</a>
+			</li>
+		</ul>
+
+		<h2>control access by...</h2>
+
+		<a href = "/app/permissions_module/entity"><button>by entity</button></a>
+		<a href = "/app/permissions_module/resource"><button>by resource</button></a>
+	</body>
+</html>

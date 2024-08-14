@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>kalyah</title>
+	</head>
+
+	<body>
+		<h1>access control for {{entity}}</h1>
+
+		<h4>admin: {{username}}</h4>
+
+		<a href = "/app/permissions_module/entity">access by entity</a>
+
+		<table>
+			<tr>
+				<th>has access to</th>
+			</tr>
+
+			{{#each accessible}}
+			<tr>
+				<td>
+					{{this}}
+
+					<form action = "/app/restrict_entity" method = "post">
+						<input type = "hidden" name = "member" value = {{../entity}}>
+
+						<input type = "hidden" name = "resource" value = {{this}}>
+
+						<button type = "submit">stop access</button>
+					</form>
+				</td>
+			</tr>
+			{{/each}}
+		</table>
+		
+		<table>
+			<tr>
+				<th>no access to</th>
+			</tr>
+
+			{{#each restricted}}
+			<tr>
+				<td>
+					{{this}}					
+					
+					<form action = "/app/allow_entity" method = "post">
+						<input type = "hidden" name = "member" value = {{../entity}}>
+
+						<input type = "hidden" name = "resource" value = {{this}}>
+
+						<button type = "submit">give access</button>
+					</form>
+				</td>
+			</tr>
+			{{/each}}
+		</table>
+	</body>
+</html>

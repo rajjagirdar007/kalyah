@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>kalyah</title>
+
+		<link rel = "stylesheet" href = "/css/nav_bar.css">
+	</head>
+
+	<body>
+		<h1>access control by resource</h1>
+		<h4>admin: {{username}}</h4>
+
+		<ul class = "nav-bar">
+			<li>
+				<form action = "/logout" method = "get">
+					<button type = "submit">logout</button>
+				</form>
+			</li>
+			<li>
+				<a href = "/app/permissions_module">access</a>
+			</li>
+		</ul>
+		
+		<ul id = "list">
+			{{#each row}}
+			<li><a href = {{this.link}}>{{this.original_link}}</a></li>
+			{{/each}}
+		</ul>
+	</body>
+</html>

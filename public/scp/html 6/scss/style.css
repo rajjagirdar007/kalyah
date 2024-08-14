@@ -1,0 +1,102 @@
+html, body {
+  font-family: 'PP Neue Machina Plain';
+  letter-spacing: 2px;
+  background-color: #000000;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.formPart {
+  margin-bottom: 30px;
+}
+
+.inputField {
+  background-color: #000000;
+  border-radius: 6px;
+  font-family: 'PP Neue Machina Plain';
+  font-size: 14px;
+  color: #05ff44;
+  font-weight: normal;
+  border: solid 1px #05ff44;
+  height: inherit;
+  letter-spacing: 2px;
+}
+
+.inputField:focus {
+  background-color: #000000;
+  border-radius: 6px;
+  font-family: 'PP Neue Machina Plain';
+  font-size: 14px;
+  color: #05ff44;
+  font-weight: normal;
+  border: solid 1px #05ff44;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.inputField::-webkit-input-placeholder {
+  font-family: 'PP Neue Machina Plain';
+  font-size: 14px;
+  color: #05ff44;
+  font-weight: normal;
+}
+
+.inputField:-ms-input-placeholder {
+  font-family: 'PP Neue Machina Plain';
+  font-size: 14px;
+  color: #05ff44;
+  font-weight: normal;
+}
+
+.inputField::-ms-input-placeholder {
+  font-family: 'PP Neue Machina Plain';
+  font-size: 14px;
+  color: #05ff44;
+  font-weight: normal;
+}
+
+.inputField::placeholder {
+  font-family: 'PP Neue Machina Plain';
+  font-size: 14px;
+  color: #05ff44;
+  font-weight: normal;
+}
+
+label {
+  font-family: 'PP Neue Machina Plain';
+  font-size: 14px;
+  color: #000000;
+  font-weight: 500;
+}
+
+.searchBtn {
+  background-color: #05ff44;
+  border-radius: 0 6px 6px 0;
+}
+
+.btnPrimary {
+  background-color: #05ff44;
+  border-radius: 4px;
+  font-family: 'PP Neue Machina Plain';
+  font-size: 14px;
+  color: #000000;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border: solid 1px #05ff44;
+}
+
+.btnPrimary:hover {
+  background-color: #000000;
+  color: #05ff44;
+}
+/*# sourceMappingURL=style.css.map */

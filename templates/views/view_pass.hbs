@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>kalyah</title>
+	</head>
+
+	<body>
+		<h1>view passwords {{user}}</h1>
+
+		<form action = "/logout">
+			<button type = "submit">logout</button>
+		</form>
+
+		<ul>
+			{{#each row}}
+			<li><a href = {{this.link}}>{{this.original_link}}</a></li>
+			{{/each}}
+		</ul>
+<!--
+		<table>
+			<tr>
+				<th>shared from</th>
+				<th>original link</th>
+				<th></th>
+				<th>username</th>
+				<th>password</th>
+				<th>additional notes</th>
+			</tr>
+
+			{{#each row}}
+			<tr>
+				<td>{{this.username}}</td>
+				<td>{{this.original_link}}</td>
+				<td><img src = {{this.image_link}}></td>
+				<td>{{this.cred_user}}</td>
+				<td>{{this.cred_pass}}</td>
+				<td>{{this.additional_notes}}</td>
+			</tr>
+			{{/each}}
+		</table>
+-->
+	</body>
+</html>
